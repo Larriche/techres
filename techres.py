@@ -49,9 +49,7 @@ def runBot(username,studentid,password,year,sem):
     noResultsAlert = "Your records are not available for this semester!"
     invalidLoginAlert = "The user name, password or studentid provided is incorrect."
 
-    # variable to determine whether we have the right html for passing
-    proceed = True
-
+    
     # will occur when there are no results for the given year and we get redirected
     if noResultsAlert in data:
         print "No results found for given year and sem."
