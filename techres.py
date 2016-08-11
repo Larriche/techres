@@ -151,6 +151,8 @@ def inputClear(studentId,year,sem):
 
     
 def printUsage():
+    # the final program was distributed as an executable that's why the usage
+    # info shows the program name without .py extension
     print """
           Usage:
              techres username studentid academic_year sem
