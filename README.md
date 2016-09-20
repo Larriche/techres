@@ -4,4 +4,4 @@ academic results via the command prompt.This offers a convenient for geeky stude
 without having to go all the way to the site.
 
 It's basically a bot that logs in with the user's credentials,pull the results html and then there is a 
-web scraper component that parses the results.
+parsing component that parses the results.
