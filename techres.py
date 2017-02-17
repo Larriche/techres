@@ -67,11 +67,16 @@ def parseHTML(html):
     # cooking some soup
     bsObj = BeautifulSoup(html,"html.parser")
 
-    # the main results table is the second on the page
-    resultsTable = bsObj.findAll("table")[1]
+    try:
+        # the main results table is the second on the page
+        resultsTable = bsObj.findAll("table")[1]
 
-    # the results stats table is the third on the page
-    statsTable = bsObj.findAll("table")[2]
+        # the results stats table is the third on the page
+        statsTable = bsObj.findAll("table")[2]
+    except:
+        print "Your results are not available"
+        sys.exit()
+        
 
     # get rows from the various tables in format that's
     # easy to iterate on
